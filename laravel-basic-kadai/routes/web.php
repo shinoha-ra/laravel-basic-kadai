@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //ルーティングを設定するコントローラーの宣言
 use App\Http\Controllers\PostController;
+use Illuminate\support\facades\DB;
 
 /*
 |--------------------------------------------------------------------------
