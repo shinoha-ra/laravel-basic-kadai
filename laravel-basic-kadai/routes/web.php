@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 //ルーティングを設定するコントローラーの宣言
 use App\Http\Controllers\PostController;
-use Illuminate\support\facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +21,8 @@ use Illuminate\support\facades\DB;
 // });
 
 Route::get('/posts',[PostController::class,'index']);
+
+
+Route::get('/posts/{id}',[PostController::class,'show']);
 
 
